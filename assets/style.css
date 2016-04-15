@@ -35,7 +35,7 @@ Whenever [mdcss] is used, reference this theme.
 
 ```js
 require('mdcss')({
-	theme: require('mdcss-theme-github')({ /​* options *​/ })
+  theme: require('mdcss-theme-github')({ /​* options *​/ })
 })
 ```
 
@@ -54,14 +54,14 @@ iframe examples that may be used.
 
 #### `title`
 
-Type: `String`  
+Type: `String`
 Default: `'Style Guide'`
 
 The page title to be used by the style guide.
 
 #### `logo`
 
-Type: `String`  
+Type: `String`
 Default: `'mdcss-logo.png'`
 
 <img src="https://jonathantneal.github.io/mdcss-theme-github/demo/mdcss-logo.png" width="96" height="96">
@@ -70,7 +70,7 @@ The page logo to be used by the style guide.
 
 #### `examples.base`
 
-Type:    `String`  
+Type:    `String`
 Default: `null`
 
 The base URL to use for all relative URLs contained within an example,
@@ -78,35 +78,35 @@ including CSS and JavaScript references.
 
 #### `examples.target`
 
-Type:    `String`  
+Type:    `String`
 Default: `'_self'`
 
 The frame to open example hyperlinks from within an example.
 
 #### `examples.css`
 
-Type:    `Array`  
+Type:    `Array`
 Default: `['style.css']`
 
 A list of CSS files to be used by examples.
 
 #### `examples.js`
 
-Type:    `Array`  
+Type:    `Array`
 Default: `null`
 
 A list of JavaScript files to be used by examples.
 
 #### `examples.bodyjs`
 
-Type:    `Array`  
+Type:    `Array`
 Default: `null`
 
 A list of JavaScript files to be used by examples, inserted after the example.
 
 #### `examples.htmlcss`
 
-Type:    `String`  
+Type:    `String`
 Default: `'background:none;border:0;clip:auto;display:block;height:auto;margin:0;padding:0;position:static;width:auto'`
 
 A string of styles applied to the `<html>` wrapping the example. These default
@@ -114,7 +114,7 @@ styles are used to create a seamless effect with the styleguide.
 
 #### `examples.bodycss`
 
-Type:    `String`  
+Type:    `String`
 Default: `'background:none;border:0;clip:auto;display:block;height:auto;margin:0;padding:16px;position:static;width:auto'`
 
 A string of styles applied to the `<body>` wrapping the example. These default
@@ -123,29 +123,29 @@ styles are used to create a seamless effect with the styleguide.
 */
 
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-	margin: 0;
-	padding: 20px;
+  margin: 0;
+  padding: 20px;
 }
 
 @media screen and (min-width: 640px) {
-	body {
-		display: flex;
-		padding: 30px 30px 90px;
-	}
+  body {
+    display: flex;
+    padding: 30px 30px 90px;
+  }
 
-	header {
-		flex-basis: 250px;
-	}
+  header {
+    flex-basis: 250px;
+  }
 }
 
 nav > img {
-	height: 190px;
-	margin: 0 25px 20px;
-	width: 190px;
+  height: 190px;
+  margin: 0 25px 20px;
+  width: 190px;
 }
 
 /*---
@@ -248,84 +248,84 @@ order: 1
 
 
 body {
-	background-color: #ffffff;
-	color: #333333;
+  background-color: #ffffff;
+  color: #333333;
 }
 
 pre, code {
-	background-color: rgba(0,0,0,.04);
+  background-color: rgba(0,0,0,.04);
 }
 
 pre code {
-	background-color: transparent;
+  background-color: transparent;
 }
 
 .token.punctuation {
-	color: #333333;
+  color: #333333;
 }
 
 .token.tag {
-	color: #218200;
+  color: #218200;
 }
 
 .token.attr-name {
-	color: #795da3;
+  color: #795da3;
 }
 
 .token.attr-value {
-	color: #183691;
+  color: #183691;
 }
 
 .token.function {
-	color: #0086b3;
+  color: #0086b3;
 }
 
 .token.string {
-	color: #183691;
+  color: #183691;
 }
 
 .token.comment {
-	color: #969896;
+  color: #969896;
 }
 
 .colors {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .color {
-	margin-bottom: 20px;
-	vertical-align: top;
-	width: 160px;
+  margin-bottom: 20px;
+  vertical-align: top;
+  width: 160px;
 }
 
 .color:not(:last-child) {
-	margin-right: 40px;
+  margin-right: 40px;
 }
 
 .color-swatch {
-	border-radius: 50%;
-	box-shadow: inset 0 0 1px 0 currentColor;
-	font-weight: 700;
-	height: 160px;
-	line-height: 160px;
-	margin-bottom: 10px;
-	text-align: center;
-	width: 160px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 1px 0 currentColor;
+  font-weight: 700;
+  height: 160px;
+  line-height: 160px;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 160px;
 }
 
 .color-property {
-	font-size: 80%;
-	font-weight: 700;
-	padding: 0 10px;
+  font-size: 80%;
+  font-weight: 700;
+  padding: 0 10px;
 }
 
 .color-property::before {
-	content: attr(data-name) ":\00a0";
-	display: inline-block;
-	font-weight: 300;
-	min-width: 3em;
+  content: attr(data-name) ":\00a0";
+  display: inline-block;
+  font-weight: 300;
+  min-width: 3em;
 }
 
 /*---
@@ -339,8 +339,8 @@ This theme uses a common Helvetica font stack with a relative line height of
 */
 
 body {
-	font-family: "Helvetica Neue", "Helvetica", "Segoe UI", "Arial", "freesans", sans-serif;
-	line-height: 1.6;
+  font-family: "Helvetica Neue", "Helvetica", "Segoe UI", "Arial", "freesans", sans-serif;
+  line-height: 1.6;
 }
 
 /*---
@@ -361,88 +361,88 @@ Headings match GitHub documentation conventions.
 */
 
 h1 {
-	font-size: 2.25em;
-	line-height: 1.2;
-	border-bottom: 1px solid #eee;
-	margin-bottom: 16px;
-	margin-top: 1em;
-	padding-bottom: .3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 16px;
+  margin-top: 1em;
+  padding-bottom: .3em;
 }
 
 h2 {
-	font-size: 1.75em;
-	line-height: 1.225;
-	border-bottom: 1px solid #eee;
-	margin-bottom: 1rem;
-	margin-top: 1em;
-	padding-bottom: .3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 1rem;
+  margin-top: 1em;
+  padding-bottom: .3em;
 }
 
 h3 {
-	font-size: 1.5em;
-	line-height: 1.43;
-	margin-bottom: 1rem;
-	margin-top: 1em;
+  font-size: 1.5em;
+  line-height: 1.43;
+  margin-bottom: 1rem;
+  margin-top: 1em;
 }
 
 h4 {
-	font-size: 1.25em;
-	line-height: 1.4;
-	margin-bottom: 1rem;
-	margin-top: 1em;
+  font-size: 1.25em;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+  margin-top: 1em;
 }
 
 h5, h6 {
-	font-size: 1em;
-	line-height: 1.4;
-	margin-bottom: 1rem;
-	margin-top: 1em;
+  font-size: 1em;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+  margin-top: 1em;
 }
 
 h6 {
-	color: #777777;
+  color: #777777;
 }
 
 code {
-	border-radius: 3px;
-	display: inline-block;
-	font-family: "Consolas", "Liberation Mono", "Menlo", "Courier", monospace;
-	font-size: 85%;
-	margin: -.1em 0;
-	max-width: 100%;
-	overflow: auto;
-	padding: .1em;
-	vertical-align: text-top;
+  border-radius: 3px;
+  display: inline-block;
+  font-family: "Consolas", "Liberation Mono", "Menlo", "Courier", monospace;
+  font-size: 85%;
+  margin: -.1em 0;
+  max-width: 100%;
+  overflow: auto;
+  padding: .1em;
+  vertical-align: text-top;
 }
 
 button {
-	background-color: #eeeeee;
-	background-image: linear-gradient(#fcfcfc, #eeeeee);
-	border: 1px solid #d5d5d5;
-	border-radius: 3px;
-	color: #333333;
-	cursor: pointer;
-	display: inline-block;
-	font-size: 81.25%;
-	font-weight: bold;
-	line-height: 1.538462;
-	outline: 0;
-	padding: 6px 12px;
-	vertical-align: middle;
-	white-space: nowrap;
+  background-color: #eeeeee;
+  background-image: linear-gradient(#fcfcfc, #eeeeee);
+  border: 1px solid #d5d5d5;
+  border-radius: 3px;
+  color: #333333;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 81.25%;
+  font-weight: bold;
+  line-height: 1.538462;
+  outline: 0;
+  padding: 6px 12px;
+  vertical-align: middle;
+  white-space: nowrap;
 }
 
 button:focus, button:hover {
-	background-color: #dddddd;
-	background-image: linear-gradient(#eeeeee, #dddddd);
-	border-color: #cccccc;
+  background-color: #dddddd;
+  background-image: linear-gradient(#eeeeee, #dddddd);
+  border-color: #cccccc;
 }
 
 button:active {
-	background-color: #dcdcdc;
-	background-image: none;
-	border-color: #b5b5b5;
-	box-shadow: inset 0 2px 4px rgba(0,0,0,0.15);
+  background-color: #dcdcdc;
+  background-image: none;
+  border-color: #b5b5b5;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.15);
 }
 
 /*---
@@ -464,132 +464,132 @@ The navigation remains fixed while you scroll.
 */
 
 @media screen and (min-width: 640px) {
-	main {
-		max-width: 50em;
-		width: calc(100% - 250px);
-	}
+  main {
+    max-width: 50em;
+    width: calc(100% - 250px);
+  }
 }
 
 main > section {
-	margin-bottom: 80px;
+  margin-bottom: 80px;
 }
 
 figure,
 p {
-	margin: 0 0 1rem;
+  margin: 0 0 1rem;
 }
 
 figure {
-	overflow: auto;
-	-webkit-overflow-scroll: touch;
+  overflow: auto;
+  -webkit-overflow-scroll: touch;
 }
 
 pre {
-	margin: 0;
-	overflow: auto;
-	-webkit-overflow-scroll: touch;
+  margin: 0;
+  overflow: auto;
+  -webkit-overflow-scroll: touch;
 }
 
 @media screen and (min-width: 641px) {
-	pre {
-		max-width: calc(100vw - 230px - 90px);
-	}
+  pre {
+    max-width: calc(100vw - 230px - 90px);
+  }
 }
 
 pre code {
-	display: block;
-	line-height: 1.45;
-	margin: 1em;
-	white-space: pre;
+  display: block;
+  line-height: 1.45;
+  margin: 1em;
+  white-space: pre;
 }
 
 iframe {
-	display: block;
-	border: 0;
-	height: 0;
-	margin: 0;
-	width: 100%;
+  display: block;
+  border: 0;
+  height: 0;
+  margin: 0;
+  width: 100%;
 }
 
 hr {
-	background-color: #e7e7e7;
-	border: 0 none;
-	height: 4px;
-	margin: 1rem 0;
-	padding: 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+  height: 4px;
+  margin: 1rem 0;
+  padding: 0;
 }
 
 a {
-	color: #4078c0;
-	cursor: pointer;
-	text-decoration: none;
+  color: #4078c0;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 footer {
-	color: #767676;
-	font-size: .75rem;
+  color: #767676;
+  font-size: .75rem;
 }
 
 a:hover, a:active {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 @media screen and (min-width: 640px) {
-	nav {
-		position: fixed;
-		width: calc(250px - 30px);
-	}
+  nav {
+    position: fixed;
+    width: calc(250px - 30px);
+  }
 }
 
 nav ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 nav > ul {
-	max-height: calc(100vh - 190px - 20px - 30px);
-	overflow-y: scroll;
-	-webkit-overflow-scrolling: touch;
-	padding-bottom: 20px;
+  max-height: calc(100vh - 190px - 20px - 30px);
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 20px;
 }
 
 nav a {
-	color: #565454;
-	display: block;
-	font-size: .875rem;
-	line-height: 1.2;
-	padding: 5px 25px;
+  color: #565454;
+  display: block;
+  font-size: .875rem;
+  line-height: 1.2;
+  padding: 5px 25px;
 }
 
 nav a:hover,
 nav a:focus {
-	background-color: #f8f8f8;
-	text-decoration: none;
+  background-color: #f8f8f8;
+  text-decoration: none;
 }
 
 nav > ul > li {
-	margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 nav > ul > li > a {
-	color: #767676;
-	font-size: .75rem;
-	font-weight: 300;
-	letter-spacing: .025em;
-	overflow: hidden;
-	text-transform: uppercase;
-	padding: 5px 25px;
-	text-overflow: ellipsis;
+  color: #767676;
+  font-size: .75rem;
+  font-weight: 300;
+  letter-spacing: .025em;
+  overflow: hidden;
+  text-transform: uppercase;
+  padding: 5px 25px;
+  text-overflow: ellipsis;
 }
 
 nav > ul > li > a:hover,
 nav > ul > li > a:focus {
-	color: #5f5f5f;
+  color: #5f5f5f;
 }
 
 nav > ul > li > a > span {
-	box-shadow: 0 1px 0 0 rgba(0,0,0,.1);
+  box-shadow: 0 1px 0 0 rgba(0,0,0,.1);
 }
 
 /*---
@@ -603,9 +603,9 @@ perferendis quam! Ullam, debitis ab maiores.
 
 ```html
 <form class="a-particularly-long-class-name">
-	<fieldset class="control-group">
-		<input class="control-input" type="text" value="A particularly long value for an input control">
-	</fieldset>
+  <fieldset class="control-group">
+    <input class="control-input" type="text" value="A particularly long value for an input control">
+  </fieldset>
 </form>
 ```
 
@@ -673,5 +673,5 @@ perferendis quam! Ullam, debitis ab maiores.
 */
 
 :root {
-	background-color: #ffffff;
+  background-color: #ffffff;
 }
