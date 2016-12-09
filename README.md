@@ -12,14 +12,14 @@ Add [mdcss] and [mdcss GitHub] to your build tool:
 
 ```bash
 npm install mdcss --save-dev
-npm install mdcss-theme-github --save-dev
+npm install mdcss-theme-github-iscor --save-dev
 ```
 
 Whenever [mdcss] is used, reference this theme.
 
 ```js
 require('mdcss')({
-	theme: require('mdcss-theme-github')({ /* options */ })
+  theme: require('mdcss-theme-github-iscor')({ /* options */ })
 })
 ```
 
@@ -29,43 +29,43 @@ require('mdcss')({
 
 The `example` keyword is used to render living examples of code in iframes.
 
-	```example
-	<button>This is a button</button>
-	```
+  ```example
+  <button>This is a button</button>
+  ```
 
 Specifying a language like `example:html` generates an example that is then followed by the original code block.
 
-	```example:html
-	<button>This is a button</button>
-	```
+  ```example:html
+  <button>This is a button</button>
+  ```
 
 Arguments that follow `,name:value` may be used to customize the example iframes. For instance, the width or height of an example might be specified so that its contents adhere to a particular breakpoint.
 
-	```example,width=1024px
-	<p>The desktop view.</p>
-	```
+  ```example,width=1024px
+  <p>The desktop view.</p>
+  ```
 
-	```example,width=768px
-	<p>The tablet view.</p>
-	```
+  ```example,width=768px
+  <p>The tablet view.</p>
+  ```
 
-	```example,width=320px
-	<p>The mobile view.</p>
-	```
+  ```example,width=320px
+  <p>The mobile view.</p>
+  ```
 
 #### Color
 
 The `color` keyword is used to generate a visual palette of colors. Arguments that follow `@name: value` may be used to provide any additional details about a color.
 
-	```example:color
-	@color: #ffffff @name: White
-	@color: #f8f8f8 @name: White Smoke
-	@color: #e7e7e7 @name: Whisper
-	@color: #777777 @name: Grey
-	@color: #565454 @name: Matterhorn
-	@color: #4078c0 @name: Steel Blue
-	@color: #333333 @name: Night Rider
-	```
+  ```example:color
+  @color: #ffffff @name: White
+  @color: #f8f8f8 @name: White Smoke
+  @color: #e7e7e7 @name: Whisper
+  @color: #777777 @name: Grey
+  @color: #565454 @name: Matterhorn
+  @color: #4078c0 @name: Steel Blue
+  @color: #333333 @name: Night Rider
+  ```
 
 #### Order
 
@@ -76,6 +76,7 @@ The `order` heading detail is used to control the order of sections in the gener
 section: First Section
 order: -1
 ---
+*/
 ```
 
 Attached to a subsection, the order detail will control the position of the subsection inside the section.
@@ -86,8 +87,8 @@ title:   Last Subsection
 section: Third Section
 order: 1
 ---
+*/
 ```
-
 
 ## Options
 
@@ -104,8 +105,6 @@ The page title to be used by the style guide.
 
 Type: `String`  
 Default: `'mdcss-logo.png'`
-
-<img src="https://jonathantneal.github.io/mdcss-theme-github/demo/mdcss-logo.png" width="96" height="96">
 
 The page logo to be used by the style guide.
 
@@ -173,10 +172,14 @@ Default: `'background:none;border:0;clip:auto;display:block;height:auto;margin:0
 
 A string of styles applied to the `<body>` wrapping the example. These default styles are used to create a seamless effect with the styleguide.
 
-[ci]:      https://travis-ci.org/jonathantneal/mdcss-theme-github
-[ci-img]:  https://img.shields.io/travis/jonathantneal/mdcss-theme-github.svg
-[npm]:     https://www.npmjs.com/package/mdcss-theme-github
-[npm-img]: https://img.shields.io/npm/v/mdcss-theme-github.svg
+## Credits
+
+Thanks to Jonathan Neal <jonathantneal@hotmail.com> (http://jonathantneal.com)
+
+[ci]:      https://travis-ci.org/iGitScor/mdcss-theme-github-iscor
+[ci-img]:  https://img.shields.io/travis/iGitScor/mdcss-theme-github-iscor.svg
+[npm]:     https://www.npmjs.com/package/mdcss-theme-github-iscor
+[npm-img]: https://img.shields.io/npm/v/mdcss-theme-github-iscor.svg
 [mdcss]:   https://github.com/jonathantneal/mdcss
 
-[mdcss GitHub]: https://github.com/jonathantneal/mdcss-theme-github
+[mdcss GitHub]: https://github.com/iGitScor/mdcss-theme-github-iscor

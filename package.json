@@ -1,6 +1,6 @@
 {
   "name": "mdcss-theme-github-iscor",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "description": "GitHub flavored theme for mdcss",
   "keywords": [
     "mdcss",
@@ -8,7 +8,7 @@
     "github",
     "theme"
   ],
-  "author": "Jonathan Neal <jonathantneal@hotmail.com> (http://jonathantneal.com)",
+  "author": "iGitScor <sebastien.correaud@gmail.com> (http://iscor.me)",
   "license": "CC0-1.0",
   "repository": "iGitScor/mdcss-github-theme-iscor",
   "bugs": "https://github.com/iGitScor/mdcss-github-theme-iscor/issues",
