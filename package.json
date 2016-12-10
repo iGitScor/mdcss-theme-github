@@ -1,6 +1,6 @@
 {
   "name": "mdcss-theme-github-iscor",
-  "version": "2.3.3",
+  "version": "2.3.4",
   "description": "GitHub flavored theme for mdcss",
   "keywords": [
     "mdcss",
@@ -44,5 +44,10 @@
   },
   "engines": {
     "node": ">=4"
-  }
+  },
+  "files": [
+    "index.js",
+    "template.ejs",
+    "assets"
+  ]
 }
