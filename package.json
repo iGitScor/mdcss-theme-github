@@ -14,19 +14,23 @@
   "bugs": "https://github.com/iGitScor/mdcss-theme-github-iscor/issues",
   "homepage": "https://github.com/iGitScor/mdcss-theme-github-iscor#readme",
   "dependencies": {
+    "chokidar": "^1.4.2",
     "ejs": "^2.4.1",
-    "object-assign": "^4.0.1"
+    "object-assign": "^4.0.1",
+    "mdcss": "^1.5.1",
+    "tape": "^4.4.0"
   },
   "devDependencies": {
-    "chokidar": "^1.4.2",
-    "eslint": "^1.10.3",
-    "mdcss": "^1.5.1",
+    "eslint": "3.11.x",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.8.0",
     "tap-spec": "^4.1.1",
-    "tape": "^4.4.0",
     "watch": "^0.17.1"
   },
   "scripts": {
-    "lint": "eslint . --ignore-path .eshintignore",
+    "lint": "eslint '**/*.js' --ignore-path .eshintignore",
     "tape": "tape test.js | tap-spec",
     "test": "npm run lint && npm run tape",
     "watch": "tape watch.js"

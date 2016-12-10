@@ -1,9 +1,9 @@
-var ejs  = require('ejs');
-var ext  = require('object-assign');
-var fs   = require('fs');
-var path = require('path');
+const ejs = require('ejs');
+const ext = require('object-assign');
+const fs = require('fs');
+const path = require('path');
 
-module.exports = function (themeopts) {
+module.exports = (themeopts) => {
   // set theme options object
   themeopts = Object(themeopts);
 
@@ -21,28 +21,28 @@ module.exports = function (themeopts) {
 
   // set example conf
   themeopts.examples = ext({
-    base:    '',
-    target:  '_self',
-    css:     ['style.css'],
-    js:      [],
-    bodyjs:  [],
+    base: '',
+    target: '_self',
+    css: ['style.css'],
+    js: [],
+    bodyjs: [],
     htmlcss: 'background:none;border:0;clip:auto;display:block;height:auto;margin:0;padding:0;position:static;width:auto;',
     bodycss: 'background:none;border:0;clip:auto;display:block;height:auto;margin:0;padding:16px;position:static;width:auto;',
   }, themeopts.examples);
 
   // return theme
-  return function (docs) {
+  return (docs) => {
     // set assets directory and template
-    docs.assets   = path.join(__dirname, 'assets');
+    docs.assets = path.join(__dirname, 'assets');
     docs.template = path.join(__dirname, 'template.ejs');
 
     // set theme options
     docs.themeopts = themeopts;
 
     // return promise
-    return new Promise(function (resolve, reject) {
+    return new Promise((resolve, reject) => {
       // read template
-      fs.readFile(docs.template, 'utf8', function (error, contents) {
+      fs.readFile(docs.template, 'utf8', (error, contents) => {
         // throw if template could not be read
         if (error) reject(error);
         else {
