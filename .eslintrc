@@ -10,3 +10,4 @@ extends: "airbnb"
 rules:
   no-param-reassign: 0
   vars-on-top: 0
+  strict: 0
