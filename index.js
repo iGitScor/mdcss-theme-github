@@ -1,3 +1,5 @@
+'use strict';
+
 const ejs = require('ejs');
 const ext = require('object-assign');
 const fs = require('fs');

@@ -1,3 +1,5 @@
+'use strict';
+
 const mdcss = require('mdcss');
 const fs = require('fs');
 const path = require('path');
